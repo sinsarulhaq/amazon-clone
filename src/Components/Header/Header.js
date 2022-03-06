@@ -4,8 +4,19 @@ import SearchIcon from "@mui/icons-material/Search";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { logoutInitiate } from "../../redux/action";
 
 function Header() {
+  const { user, basket } = useSelector((state) => state.data);
+  const dispatch = useDispatch();
+
+  const handleAuth = () => {
+    if(user){
+      dispatch(logoutInitiate());
+    }
+    
+  };
   return (
     <nav className="header">
       <Link to={"/"}>
@@ -19,7 +30,7 @@ function Header() {
         <FmdGoodOutlinedIcon />
       </div>
       <div className="header-option">
-        <span className="header-option1">Hello</span>
+        <span className="header-option1">Hello </span>
         <span className="header-option2">Select Your Address</span>
       </div>
       <div className="search">
@@ -30,10 +41,14 @@ function Header() {
         <SearchIcon className="searchIcon" />
       </div>
       <div className="header-nav">
-        <Link to={"/login"} className="header-link">
-          <div className="header-option">
-            <span className="header-option1">Hello Guest</span>
-            <span className="header-option2">Sign in</span>
+        <Link to={`${user ? "/" : "/login"}`} className="header-link">
+          <div className="header-option" onClick={handleAuth}>
+            <span className="header-option1">
+              Hello , {user ? user.email : "Guest"}
+            </span>
+            <span className="header-option2">
+              {user ? "Sign Out" : "Sign in"}
+            </span>
           </div>
         </Link>
         <Link to={"/order"} className="header-link">
@@ -42,10 +57,16 @@ function Header() {
             <span className="header-option2"> & orders</span>
           </div>
         </Link>
+        <Link to={"/login"} className="header-link">
+          <div className="header-option">
+            <span className="header-option1">Your</span>
+            <span className="header-option2">Prime</span>
+          </div>
+        </Link>
         <Link to={"/checkout"} className="header-link">
           <div className="header-basket">
-              <ShoppingCartOutlinedIcon />
-            <span className="header-option2 basket-count">0</span>
+            <ShoppingCartOutlinedIcon />
+            <span className="header-option2 basket-count">{basket && basket.length}</span>
           </div>
         </Link>
       </div>

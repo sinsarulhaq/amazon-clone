@@ -10,10 +10,13 @@ import Banner5 from "../../BannerImages/Banner5.jpg";
 import Banner6 from "../../BannerImages/Banner6.jpg";
 import Products from "../../Components/Products/Products";
 import BackToTop from "../../Components/BackToTop/BackToTop";
+import Header from "../../Components/Header/Header";
 
 function Home() {
   const bannerImages = [Banner1, Banner2, Banner3, Banner4, Banner5, Banner6];
   return (
+    <>
+    <Header />
     <div>
       <div className="item-container">
         {headerItems &&
@@ -70,6 +73,7 @@ function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
