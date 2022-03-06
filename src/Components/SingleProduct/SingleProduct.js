@@ -14,15 +14,15 @@ function SingleProduct({}) {
   const addItemToBasket = (e) => {
     e.preventDefault();
     const item = {
-        id: singleProduct.id,
-        title: singleProduct.title,
-        image: singleProduct.image,
-        price: singleProduct.price,
-        rating: singleProduct.rating,
-        specification: singleProduct.specification,
-        detail: singleProduct.detail,
-    }
-    dispatch(addToBasket(item))
+      id: singleProduct.id,
+      title: singleProduct.title,
+      image: singleProduct.image,
+      price: singleProduct.price,
+      rating: singleProduct.rating,
+      specification: singleProduct.specification,
+      detail: singleProduct.detail,
+    };
+    dispatch(addToBasket(item));
   };
   return (
     <>

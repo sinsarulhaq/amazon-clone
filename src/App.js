@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { auth } from "./firebase";
 import { setUser } from "./redux/action";
 import SingleProduct from "./Components/SingleProduct/SingleProduct";
+import Checkout from "./Pages/Checkout/Checkout";
 
 function App() {
   const dispatch = useDispatch()
@@ -35,6 +36,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/product/:id" element={<SingleProduct />} />
+      </Routes>
+      <Routes>
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   );
