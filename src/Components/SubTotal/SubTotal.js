@@ -19,10 +19,10 @@ function SubTotal() {
   return (
     <div className='subtotal'>
         <CurrencyFormat
-        renderText={(value) => (
+        renderText={(values) => (
             <>
             <p>
-                SubTotal ({basket.length} items) :  <strong>{value}</strong>
+                SubTotal ({basket.length} items) :  <strong>{values}</strong>
             </p>
             <small className='subtotal-gift'>
                 <input type="checkbox" />

@@ -1,11 +1,14 @@
 import React from "react";
 import "./CheckoutProduct.css";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { useDispatch } from "react-redux";
+import { removeFromBasket } from "../../redux/action";
 
 function CheckoutProduct({ id, title, image, rating, price }) {
-
+  const dispatch = useDispatch()
   const removeIteamFromBasket = (e) => {
     e.preventDefault();
+    dispatch(removeFromBasket(id))
   };
   return (
     <div className="checkout-product">

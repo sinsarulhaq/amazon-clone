@@ -1,0 +1,358 @@
+[debug] [2022-03-08T10:10:05.838Z] ----------------------------------------------------------------------
+[debug] [2022-03-08T10:10:05.841Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sinsa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-03-08T10:10:05.841Z] CLI Version:   10.2.0
+[debug] [2022-03-08T10:10:05.841Z] Platform:      win32
+[debug] [2022-03-08T10:10:05.841Z] Node Version:  v14.17.6
+[debug] [2022-03-08T10:10:05.848Z] Time:          Tue Mar 08 2022 15:40:05 GMT+0530 (India Standard Time)
+[debug] [2022-03-08T10:10:05.848Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-08T10:10:05.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-08T10:10:05.944Z] > authorizing via signed-in user (sinsarulhaq.pro@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-d3228. This may result in unexpected behavior. 
+[debug] [2022-03-08T10:10:05.994Z] [hub] writing locator at C:\Users\sinsa\AppData\Local\Temp\hub-clone-d3228.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-03-08T10:10:06.017Z] defaultcredentials: writing to file C:\Users\sinsa\AppData\Roaming\firebase\sinsarulhaq_pro_gmail.com_application_default_credentials.json
+[debug] [2022-03-08T10:10:06.018Z] Setting GAC to C:\Users\sinsa\AppData\Roaming\firebase\sinsarulhaq_pro_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\sinsa\\AppData\\Roaming\\firebase\\sinsarulhaq_pro_gmail.com_application_default_credentials.json"}}
+[debug] [2022-03-08T10:10:06.021Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-d3228/adminSdkConfig [none]
+[debug] [2022-03-08T10:10:06.836Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-d3228/adminSdkConfig 200
+[debug] [2022-03-08T10:10:06.836Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-d3228/adminSdkConfig {"projectId":"clone-d3228","storageBucket":"clone-d3228.appspot.com"}
+[debug] [2022-03-08T10:10:06.885Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-08T10:10:06.885Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-08T10:10:06.885Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\sinsa\\.cache\\firebase\\emulators\\ui-v1.6.4\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\sinsa\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.4\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-03-08T10:10:07.092Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\sinsa\Desktop\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-03-08T10:10:07.183Z] Validating nodejs source
+[debug] [2022-03-08T10:10:12.047Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.207.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-08T10:10:12.048Z] Building nodejs source
+[debug] [2022-03-08T10:10:12.048Z] Analyzing nodejs backend spec
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-d3228/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-d3228/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-03-08T10:10:37.530Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-03-08T10:10:37.531Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-03-08T10:10:37.532Z] Accepted request GET /clone-d3228/us-central1/api --> us-central1-api
+[debug] [2022-03-08T10:10:37.559Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-03-08T10:10:37.560Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-03-08T10:10:37.560Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-03-08T10:10:37.561Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: Assigning socketPath: \\?\pipe\C:\Users\sinsa\Desktop\amazon-clone\functions\14944 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\14944"}}
+[debug] [2022-03-08T10:10:37.562Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: BUSY"}}
+[debug] [2022-03-08T10:10:39.012Z] [runtime-status] [14944] Functions runtime initialized. {"cwd":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions","node_version":"14.17.6"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\",\"node_version\":\"14.17.6\"}"}}
+[debug] [2022-03-08T10:10:39.026Z] [runtime-status] [14944] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Disabled runtime features: undefined"}}
+[debug] [2022-03-08T10:10:39.036Z] [runtime-status] [14944] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:10:39.039Z] [runtime-status] [14944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:10:39.039Z] [runtime-status] [14944] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-03-08T10:10:39.041Z] [runtime-status] [14944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:10:39.098Z] [runtime-status] [14944] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-03-08T10:10:39.099Z] [runtime-status] [14944] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-03-08T10:10:39.099Z] [runtime-status] [14944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:10:39.100Z] [runtime-status] [14944] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:10:39.101Z] [runtime-status] [14944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:10:39.101Z] [runtime-status] [14944] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-03-08T10:10:39.358Z] [runtime-status] [14944] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Beginning execution of \"api\""}}
+[debug] [2022-03-08T10:10:39.361Z] [runtime-status] [14944] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Running api in signature http"}}
+[debug] [2022-03-08T10:10:39.364Z] [runtime-status] [14944] Attempting to listen to socketPath: \\?\pipe\C:\Users\sinsa\Desktop\amazon-clone\functions\14944 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\14944"}}
+[debug] [2022-03-08T10:10:39.370Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-03-08T10:10:39.371Z] [functions] Got req.url=/clone-d3228/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-d3228/us-central1/api, mapping to path=/"}}
+[debug] [2022-03-08T10:10:39.378Z] [runtime-status] [14944] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Ephemeral server handling GET request"}}
+[debug] [2022-03-08T10:10:39.388Z] [runtime-status] [14944] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-03-08T10:10:39.393Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: IDLE"}}
+[debug] [2022-03-08T10:10:39.394Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-03-08T10:13:47.561Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-03-08T10:13:47.565Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-03-08T10:13:47.566Z] Accepted request POST /clone-d3228/us-central1/api/payment/create?total=0 --> us-central1-api
+[debug] [2022-03-08T10:13:47.567Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-03-08T10:13:47.569Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: Assigning socketPath: \\?\pipe\C:\Users\sinsa\Desktop\amazon-clone\functions\14944 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\14944"}}
+[debug] [2022-03-08T10:13:47.570Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: BUSY"}}
+[debug] [2022-03-08T10:13:47.662Z] [runtime-status] [14944] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Beginning execution of \"api\""}}
+[debug] [2022-03-08T10:13:47.671Z] [runtime-status] [14944] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Running api in signature http"}}
+[debug] [2022-03-08T10:13:47.683Z] [runtime-status] [14944] Attempting to listen to socketPath: \\?\pipe\C:\Users\sinsa\Desktop\amazon-clone\functions\14944 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\14944"}}
+[debug] [2022-03-08T10:13:47.711Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-03-08T10:13:47.715Z] [functions] Got req.url=/clone-d3228/us-central1/api/payment/create?total=0, mapping to path=/payment/create?total=0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-d3228/us-central1/api/payment/create?total=0, mapping to path=/payment/create?total=0"}}
+[debug] [2022-03-08T10:13:47.741Z] [runtime-status] [14944] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Ephemeral server handling POST request"}}
+[debug] [2022-03-08T10:13:47.768Z] [runtime-status] [14944] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-03-08T10:13:47.771Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: IDLE"}}
+[debug] [2022-03-08T10:13:47.772Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-03-08T10:13:55.673Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-03-08T10:13:55.674Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-03-08T10:13:55.674Z] Accepted request POST /clone-d3228/us-central1/api/payment/create?total=1600 --> us-central1-api
+[debug] [2022-03-08T10:13:55.676Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-03-08T10:13:55.676Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: Assigning socketPath: \\?\pipe\C:\Users\sinsa\Desktop\amazon-clone\functions\14944 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\14944"}}
+[debug] [2022-03-08T10:13:55.677Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: BUSY"}}
+[debug] [2022-03-08T10:13:55.682Z] [runtime-status] [14944] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Beginning execution of \"api\""}}
+[debug] [2022-03-08T10:13:55.685Z] [runtime-status] [14944] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Running api in signature http"}}
+[debug] [2022-03-08T10:13:55.686Z] [runtime-status] [14944] Attempting to listen to socketPath: \\?\pipe\C:\Users\sinsa\Desktop\amazon-clone\functions\14944 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\14944"}}
+[debug] [2022-03-08T10:13:55.694Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-03-08T10:13:55.695Z] [functions] Got req.url=/clone-d3228/us-central1/api/payment/create?total=1600, mapping to path=/payment/create?total=1600 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-d3228/us-central1/api/payment/create?total=1600, mapping to path=/payment/create?total=1600"}}
+[debug] [2022-03-08T10:13:55.723Z] [runtime-status] [14944] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Ephemeral server handling POST request"}}
+[debug] [2022-03-08T10:13:55.728Z] [runtime-status] [14944] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [14944] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-03-08T10:13:55.730Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: IDLE"}}
+[debug] [2022-03-08T10:13:55.731Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-03-08T10:27:39.125Z] File C:\Users\sinsa\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-03-08T10:27:40.184Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-03-08T10:27:40.185Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: FINISHING"}}
+[debug] [2022-03-08T10:27:40.238Z] Validating nodejs source
+[debug] [2022-03-08T10:27:46.506Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.207.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-08T10:27:46.507Z] Building nodejs source
+[debug] [2022-03-08T10:27:46.508Z] Analyzing nodejs backend spec
+[debug] [2022-03-08T10:27:46.562Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: exited"}}
+[debug] [2022-03-08T10:27:46.563Z] [worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b70ee8db-4bea-4371-acd5-eadcb05f1a7e]: FINISHED"}}
+[debug] [2022-03-08T10:27:46.574Z] File C:\Users\sinsa\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-03-08T10:27:47.581Z] Validating nodejs source
+[debug] [2022-03-08T10:27:51.326Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.207.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-08T10:27:51.327Z] Building nodejs source
+[debug] [2022-03-08T10:27:51.327Z] Analyzing nodejs backend spec
+[debug] [2022-03-08T10:27:53.624Z] File C:\Users\sinsa\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-03-08T10:27:54.658Z] Validating nodejs source
+[debug] [2022-03-08T10:27:58.527Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.207.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-08T10:27:58.527Z] Building nodejs source
+[debug] [2022-03-08T10:27:58.528Z] Analyzing nodejs backend spec
+[debug] [2022-03-08T10:27:58.559Z] File C:\Users\sinsa\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-03-08T10:27:59.570Z] Validating nodejs source
+[debug] [2022-03-08T10:28:03.291Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.207.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-08T10:28:03.292Z] Building nodejs source
+[debug] [2022-03-08T10:28:03.292Z] Analyzing nodejs backend spec
+[debug] [2022-03-08T10:28:05.249Z] File C:\Users\sinsa\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-03-08T10:28:06.303Z] Validating nodejs source
+[debug] [2022-03-08T10:28:10.769Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.207.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-08T10:28:10.770Z] Building nodejs source
+[debug] [2022-03-08T10:28:10.770Z] Analyzing nodejs backend spec
+[debug] [2022-03-08T10:28:10.787Z] File C:\Users\sinsa\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-03-08T10:28:11.794Z] Validating nodejs source
+[debug] [2022-03-08T10:28:15.388Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.207.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-03-08T10:28:15.389Z] Building nodejs source
+[debug] [2022-03-08T10:28:15.389Z] Analyzing nodejs backend spec
+[debug] [2022-03-08T10:30:58.031Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-03-08T10:30:58.044Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-03-08T10:30:58.045Z] Accepted request POST /clone-d3228/us-central1/api/payment/create?total=0 --> us-central1-api
+[debug] [2022-03-08T10:30:58.048Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-03-08T10:30:58.271Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-03-08T10:30:58.272Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-03-08T10:30:58.272Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-03-08T10:30:58.275Z] [worker-us-central1-api-f6177baa-dcd0-43b0-bd35-fe1429363731]: Assigning socketPath: \\?\pipe\C:\Users\sinsa\Desktop\amazon-clone\functions\6556 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f6177baa-dcd0-43b0-bd35-fe1429363731]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\6556"}}
+[debug] [2022-03-08T10:30:58.277Z] [worker-us-central1-api-f6177baa-dcd0-43b0-bd35-fe1429363731]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f6177baa-dcd0-43b0-bd35-fe1429363731]: BUSY"}}
+[debug] [2022-03-08T10:31:01.535Z] [runtime-status] [6556] Functions runtime initialized. {"cwd":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions","node_version":"14.17.6"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\",\"node_version\":\"14.17.6\"}"}}
+[debug] [2022-03-08T10:31:01.561Z] [runtime-status] [6556] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Disabled runtime features: undefined"}}
+[debug] [2022-03-08T10:31:01.594Z] [runtime-status] [6556] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:31:01.604Z] [runtime-status] [6556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:31:01.606Z] [runtime-status] [6556] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-03-08T10:31:01.620Z] [runtime-status] [6556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:31:01.791Z] [runtime-status] [6556] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-03-08T10:31:01.792Z] [runtime-status] [6556] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-03-08T10:31:01.793Z] [runtime-status] [6556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:31:01.797Z] [runtime-status] [6556] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:31:01.800Z] [runtime-status] [6556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.18.1","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.18.1\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-03-08T10:31:01.802Z] [runtime-status] [6556] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\sinsa\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Users\\\\sinsa\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-03-08T10:31:02.501Z] [runtime-status] [6556] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"message":"[runtime-status] [6556] Beginning invocation function api!"}}
