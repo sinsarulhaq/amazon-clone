@@ -15,3 +15,5 @@ export const SET_USER = 'SET_USER'
 export const ADD_TO_BASKER = 'ADD_TO_BASKER'
 
 export const REMOVE_FROM_BASKET = 'REMOVE_FROM_BASKET'
+
+export const SET_BASKET_EMPTY = 'SET_BASKET_EMPTY'

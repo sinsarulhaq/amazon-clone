@@ -10,6 +10,7 @@ import { db } from "../../firebase";
 
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import axios from "../../utils/axios";
+import { setBasketEmpty } from "../../redux/action";
 
 function Payment() {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ function Payment() {
   const [processing, setProcessing] = useState("");
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
-  const [clientSecret, setClientSecret] = useState("");
+  const [clientSecret, setClientSecret] = useState(true);
 
   useEffect(() => {
     const getClientSecret = async () => {
@@ -56,6 +57,7 @@ console.log('THE SECRET IS >>>', clientSecret)
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+        dispatch(setBasketEmpty())
         navigate("/orders",{replace: true});
       });
   };

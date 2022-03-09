@@ -1,5 +1,6 @@
 import * as types from "./actionType";
 import { auth } from "../firebase";
+import { type } from "@testing-library/user-event/dist/type";
 
 export const addToBasket = (item) => ({
   type: types.ADD_TO_BASKER,
@@ -9,6 +10,10 @@ export const addToBasket = (item) => ({
 export const removeFromBasket = (item) => ({
   type: types.REMOVE_FROM_BASKET,
   payload: item
+})
+
+export const setBasketEmpty = () => ({
+  type: types.SET_BASKET_EMPTY,
 })
 
 const registerStart = () => ({

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useDispatch, useSelector } from "react-redux";
 import { addToBasket } from "../../redux/action";
-// import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Products({ id, title, price, rating, image, specification, detail }) {
@@ -12,15 +12,15 @@ function Products({ id, title, price, rating, image, specification, detail }) {
 
   const onAddIteamToBasket = (e) => {
     e.preventDefault();
-    // toast.success('Added: '+title, {
-    //   position: "bottom-center",
-    //   autoClose: 2000,
-    //   hideProgressBar: false,
-    //   closeOnClick: true,
-    //   pauseOnHover: true,
-    //   draggable: true,
-    //   progress: undefined,
-    //   });
+    toast.success('Added: '+title, {
+      position: "bottom-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
     const item = {
       id,
       title,
@@ -56,9 +56,8 @@ function Products({ id, title, price, rating, image, specification, detail }) {
           <ShoppingCartOutlinedIcon />
         </i>
         Add to Basket
-        {/* <ToastContainer
-          
-        /> */}
+        <ToastContainer
+        />
       </button>
     </div>
   );
